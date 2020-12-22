@@ -1,5 +1,7 @@
 # tyt_gender_prediction
 
 These are the .py and .xlsx files used to create the the figures and classifiers.
-All Python files can be found in the directory 'python', all .xlsx files can be found in 'excel'.
-For further information, please contact the author at allgaier_j@ukw.de.
+For reproduction of the results, please see the .py and .xlsx files in the corresponding directories.
+The directory 'additional' contains scripts and tables of baseline characteristics and density comparisons.
+
+For further questions, please contact the author via johannes.allgaier@uni-wuerzburg.de

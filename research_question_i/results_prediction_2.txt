@@ -1,0 +1,1171 @@
+Classifiers:
+SVC(C=1.0, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+
+DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=None, splitter='best')
+
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+              beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(8, 16, 32), learning_rate='constant',
+              learning_rate_init=0.001, max_fun=15000, max_iter=500,
+              momentum=0.9, n_iter_no_change=10, nesterovs_momentum=True,
+              power_t=0.5, random_state=1, shuffle=True, solver='adam',
+              tol=0.0001, validation_fraction=0.1, verbose=False,
+              warm_start=False)
+
+RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=None, oob_score=False, random_state=1, verbose=0,
+                       warm_start=False)
+
+###################################################################
+Features:
+['question1']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         3224          903
+Female_true       2848         1301
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.53      0.78      0.63      4127
+      Female       0.59      0.31      0.41      4149
+
+    accuracy                           0.55      8276
+   macro avg       0.56      0.55      0.52      8276
+weighted avg       0.56      0.55      0.52      8276
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         3209          918
+Female_true       2880         1269
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.53      0.78      0.63      4127
+      Female       0.58      0.31      0.40      4149
+
+    accuracy                           0.54      8276
+   macro avg       0.55      0.54      0.51      8276
+weighted avg       0.55      0.54      0.51      8276
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         3261          866
+Female_true       2885         1264
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.53      0.79      0.63      4127
+      Female       0.59      0.30      0.40      4149
+
+    accuracy                           0.55      8276
+   macro avg       0.56      0.55      0.52      8276
+weighted avg       0.56      0.55      0.52      8276
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         3249          878
+Female_true       2859         1290
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.53      0.79      0.63      4127
+      Female       0.60      0.31      0.41      4149
+
+    accuracy                           0.55      8276
+   macro avg       0.56      0.55      0.52      8276
+weighted avg       0.56      0.55      0.52      8276
+
+
+###################################################################
+Features:
+['question1', 'question2']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2252         1875
+Female_true       1737         2412
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.56      0.55      0.55      4127
+      Female       0.56      0.58      0.57      4149
+
+    accuracy                           0.56      8276
+   macro avg       0.56      0.56      0.56      8276
+weighted avg       0.56      0.56      0.56      8276
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2859         1268
+Female_true       2181         1968
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.57      0.69      0.62      4127
+      Female       0.61      0.47      0.53      4149
+
+    accuracy                           0.58      8276
+   macro avg       0.59      0.58      0.58      8276
+weighted avg       0.59      0.58      0.58      8276
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2816         1311
+Female_true       2297         1852
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.55      0.68      0.61      4127
+      Female       0.59      0.45      0.51      4149
+
+    accuracy                           0.56      8276
+   macro avg       0.57      0.56      0.56      8276
+weighted avg       0.57      0.56      0.56      8276
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2805         1322
+Female_true       2067         2082
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.58      0.68      0.62      4127
+      Female       0.61      0.50      0.55      4149
+
+    accuracy                           0.59      8276
+   macro avg       0.59      0.59      0.59      8276
+weighted avg       0.59      0.59      0.59      8276
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2585         1542
+Female_true       1751         2398
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.60      0.63      0.61      4127
+      Female       0.61      0.58      0.59      4149
+
+    accuracy                           0.60      8276
+   macro avg       0.60      0.60      0.60      8276
+weighted avg       0.60      0.60      0.60      8276
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2731         1396
+Female_true       1975         2174
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.58      0.66      0.62      4127
+      Female       0.61      0.52      0.56      4149
+
+    accuracy                           0.59      8276
+   macro avg       0.59      0.59      0.59      8276
+weighted avg       0.59      0.59      0.59      8276
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2521         1606
+Female_true       1546         2603
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.62      0.61      0.62      4127
+      Female       0.62      0.63      0.62      4149
+
+    accuracy                           0.62      8276
+   macro avg       0.62      0.62      0.62      8276
+weighted avg       0.62      0.62      0.62      8276
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2590         1537
+Female_true       1679         2470
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.61      0.63      0.62      4127
+      Female       0.62      0.60      0.61      4149
+
+    accuracy                           0.61      8276
+   macro avg       0.61      0.61      0.61      8276
+weighted avg       0.61      0.61      0.61      8276
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2706         1421
+Female_true       1802         2347
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.60      0.66      0.63      4127
+      Female       0.62      0.57      0.59      4149
+
+    accuracy                           0.61      8276
+   macro avg       0.61      0.61      0.61      8276
+weighted avg       0.61      0.61      0.61      8276
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2675         1452
+Female_true       1728         2421
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.61      0.65      0.63      4127
+      Female       0.63      0.58      0.60      4149
+
+    accuracy                           0.62      8276
+   macro avg       0.62      0.62      0.62      8276
+weighted avg       0.62      0.62      0.62      8276
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2670         1457
+Female_true       1520         2629
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.64      0.65      0.64      4127
+      Female       0.64      0.63      0.64      4149
+
+    accuracy                           0.64      8276
+   macro avg       0.64      0.64      0.64      8276
+weighted avg       0.64      0.64      0.64      8276
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2678         1449
+Female_true       1470         2679
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.65      0.65      0.65      4127
+      Female       0.65      0.65      0.65      4149
+
+    accuracy                           0.65      8276
+   macro avg       0.65      0.65      0.65      8276
+weighted avg       0.65      0.65      0.65      8276
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2872         1255
+Female_true       1701         2448
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.63      0.70      0.66      4127
+      Female       0.66      0.59      0.62      4149
+
+    accuracy                           0.64      8276
+   macro avg       0.64      0.64      0.64      8276
+weighted avg       0.64      0.64      0.64      8276
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2672         1455
+Female_true       1497         2652
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.64      0.65      0.64      4127
+      Female       0.65      0.64      0.64      4149
+
+    accuracy                           0.64      8276
+   macro avg       0.64      0.64      0.64      8276
+weighted avg       0.64      0.64      0.64      8276
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2831         1296
+Female_true       1617         2532
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.64      0.69      0.66      4127
+      Female       0.66      0.61      0.63      4149
+
+    accuracy                           0.65      8276
+   macro avg       0.65      0.65      0.65      8276
+weighted avg       0.65      0.65      0.65      8276
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2846         1281
+Female_true       1281         2868
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.69      0.69      0.69      4127
+      Female       0.69      0.69      0.69      4149
+
+    accuracy                           0.69      8276
+   macro avg       0.69      0.69      0.69      8276
+weighted avg       0.69      0.69      0.69      8276
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5', 'question6']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2892         1235
+Female_true       1649         2500
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.64      0.70      0.67      4127
+      Female       0.67      0.60      0.63      4149
+
+    accuracy                           0.65      8276
+   macro avg       0.65      0.65      0.65      8276
+weighted avg       0.65      0.65      0.65      8276
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2725         1402
+Female_true       1484         2665
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.65      0.66      0.65      4127
+      Female       0.66      0.64      0.65      4149
+
+    accuracy                           0.65      8276
+   macro avg       0.65      0.65      0.65      8276
+weighted avg       0.65      0.65      0.65      8276
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2831         1296
+Female_true       1392         2757
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.67      0.69      0.68      4127
+      Female       0.68      0.66      0.67      4149
+
+    accuracy                           0.68      8276
+   macro avg       0.68      0.68      0.68      8276
+weighted avg       0.68      0.68      0.68      8276
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2931         1196
+Female_true       1311         2838
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.69      0.71      0.70      4127
+      Female       0.70      0.68      0.69      4149
+
+    accuracy                           0.70      8276
+   macro avg       0.70      0.70      0.70      8276
+weighted avg       0.70      0.70      0.70      8276
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2828         1299
+Female_true       1558         2591
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.64      0.69      0.66      4127
+      Female       0.67      0.62      0.64      4149
+
+    accuracy                           0.65      8276
+   macro avg       0.66      0.65      0.65      8276
+weighted avg       0.66      0.65      0.65      8276
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2778         1349
+Female_true       1332         2817
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.68      0.67      0.67      4127
+      Female       0.68      0.68      0.68      4149
+
+    accuracy                           0.68      8276
+   macro avg       0.68      0.68      0.68      8276
+weighted avg       0.68      0.68      0.68      8276
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         2719         1408
+Female_true       1225         2924
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.69      0.66      0.67      4127
+      Female       0.67      0.70      0.69      4149
+
+    accuracy                           0.68      8276
+   macro avg       0.68      0.68      0.68      8276
+weighted avg       0.68      0.68      0.68      8276
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true         3084         1043
+Female_true       1135         3014
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.73      0.75      0.74      4127
+      Female       0.74      0.73      0.73      4149
+
+    accuracy                           0.74      8276
+   macro avg       0.74      0.74      0.74      8276
+weighted avg       0.74      0.74      0.74      8276
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8_0']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          322          165
+Female_true        108          390
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.75      0.66      0.70       487
+      Female       0.70      0.78      0.74       498
+
+    accuracy                           0.72       985
+   macro avg       0.73      0.72      0.72       985
+weighted avg       0.73      0.72      0.72       985
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          356          131
+Female_true        137          361
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.72      0.73      0.73       487
+      Female       0.73      0.72      0.73       498
+
+    accuracy                           0.73       985
+   macro avg       0.73      0.73      0.73       985
+weighted avg       0.73      0.73      0.73       985
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          371          116
+Female_true        173          325
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.68      0.76      0.72       487
+      Female       0.74      0.65      0.69       498
+
+    accuracy                           0.71       985
+   macro avg       0.71      0.71      0.71       985
+weighted avg       0.71      0.71      0.71       985
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          365          122
+Female_true         99          399
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.79      0.75      0.77       487
+      Female       0.77      0.80      0.78       498
+
+    accuracy                           0.78       985
+   macro avg       0.78      0.78      0.78       985
+weighted avg       0.78      0.78      0.78       985
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8_1']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          209           73
+Female_true         94          184
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.69      0.74      0.71       282
+      Female       0.72      0.66      0.69       278
+
+    accuracy                           0.70       560
+   macro avg       0.70      0.70      0.70       560
+weighted avg       0.70      0.70      0.70       560
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          197           85
+Female_true         78          200
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.72      0.70      0.71       282
+      Female       0.70      0.72      0.71       278
+
+    accuracy                           0.71       560
+   macro avg       0.71      0.71      0.71       560
+weighted avg       0.71      0.71      0.71       560
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          225           57
+Female_true         74          204
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.75      0.80      0.77       282
+      Female       0.78      0.73      0.76       278
+
+    accuracy                           0.77       560
+   macro avg       0.77      0.77      0.77       560
+weighted avg       0.77      0.77      0.77       560
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          217           65
+Female_true         64          214
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.77      0.77      0.77       282
+      Female       0.77      0.77      0.77       278
+
+    accuracy                           0.77       560
+   macro avg       0.77      0.77      0.77       560
+weighted avg       0.77      0.77      0.77       560
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8_2']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          719          189
+Female_true        262          662
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.73      0.79      0.76       908
+      Female       0.78      0.72      0.75       924
+
+    accuracy                           0.75      1832
+   macro avg       0.76      0.75      0.75      1832
+weighted avg       0.76      0.75      0.75      1832
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          695          213
+Female_true        195          729
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.78      0.77      0.77       908
+      Female       0.77      0.79      0.78       924
+
+    accuracy                           0.78      1832
+   macro avg       0.78      0.78      0.78      1832
+weighted avg       0.78      0.78      0.78      1832
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          732          176
+Female_true        236          688
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.76      0.81      0.78       908
+      Female       0.80      0.74      0.77       924
+
+    accuracy                           0.78      1832
+   macro avg       0.78      0.78      0.77      1832
+weighted avg       0.78      0.78      0.77      1832
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          752          156
+Female_true        161          763
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.82      0.83      0.83       908
+      Female       0.83      0.83      0.83       924
+
+    accuracy                           0.83      1832
+   macro avg       0.83      0.83      0.83      1832
+weighted avg       0.83      0.83      0.83      1832
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8_3']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          115           59
+Female_true         64          106
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.64      0.66      0.65       174
+      Female       0.64      0.62      0.63       170
+
+    accuracy                           0.64       344
+   macro avg       0.64      0.64      0.64       344
+weighted avg       0.64      0.64      0.64       344
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          134           40
+Female_true         58          112
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.70      0.77      0.73       174
+      Female       0.74      0.66      0.70       170
+
+    accuracy                           0.72       344
+   macro avg       0.72      0.71      0.71       344
+weighted avg       0.72      0.72      0.71       344
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          109           65
+Female_true         52          118
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.68      0.63      0.65       174
+      Female       0.64      0.69      0.67       170
+
+    accuracy                           0.66       344
+   macro avg       0.66      0.66      0.66       344
+weighted avg       0.66      0.66      0.66       344
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          139           35
+Female_true         37          133
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.79      0.80      0.79       174
+      Female       0.79      0.78      0.79       170
+
+    accuracy                           0.79       344
+   macro avg       0.79      0.79      0.79       344
+weighted avg       0.79      0.79      0.79       344
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8_4']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          135           63
+Female_true         37          175
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.78      0.68      0.73       198
+      Female       0.74      0.83      0.78       212
+
+    accuracy                           0.76       410
+   macro avg       0.76      0.75      0.75       410
+weighted avg       0.76      0.76      0.75       410
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          147           51
+Female_true         56          156
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.72      0.74      0.73       198
+      Female       0.75      0.74      0.74       212
+
+    accuracy                           0.74       410
+   macro avg       0.74      0.74      0.74       410
+weighted avg       0.74      0.74      0.74       410
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          151           47
+Female_true         56          156
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.73      0.76      0.75       198
+      Female       0.77      0.74      0.75       212
+
+    accuracy                           0.75       410
+   macro avg       0.75      0.75      0.75       410
+weighted avg       0.75      0.75      0.75       410
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          166           32
+Female_true         44          168
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.79      0.84      0.81       198
+      Female       0.84      0.79      0.82       212
+
+    accuracy                           0.81       410
+   macro avg       0.82      0.82      0.81       410
+weighted avg       0.82      0.81      0.81       410
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8_5']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          715          144
+Female_true        190          653
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.79      0.83      0.81       859
+      Female       0.82      0.77      0.80       843
+
+    accuracy                           0.80      1702
+   macro avg       0.80      0.80      0.80      1702
+weighted avg       0.80      0.80      0.80      1702
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          701          158
+Female_true        175          668
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.80      0.82      0.81       859
+      Female       0.81      0.79      0.80       843
+
+    accuracy                           0.80      1702
+   macro avg       0.80      0.80      0.80      1702
+weighted avg       0.80      0.80      0.80      1702
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          744          115
+Female_true        204          639
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.78      0.87      0.82       859
+      Female       0.85      0.76      0.80       843
+
+    accuracy                           0.81      1702
+   macro avg       0.82      0.81      0.81      1702
+weighted avg       0.82      0.81      0.81      1702
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          744          115
+Female_true        152          691
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.83      0.87      0.85       859
+      Female       0.86      0.82      0.84       843
+
+    accuracy                           0.84      1702
+   macro avg       0.84      0.84      0.84      1702
+weighted avg       0.84      0.84      0.84      1702
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8_6']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          355           82
+Female_true        127          321
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.74      0.81      0.77       437
+      Female       0.80      0.72      0.75       448
+
+    accuracy                           0.76       885
+   macro avg       0.77      0.76      0.76       885
+weighted avg       0.77      0.76      0.76       885
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          336          101
+Female_true        130          318
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.72      0.77      0.74       437
+      Female       0.76      0.71      0.73       448
+
+    accuracy                           0.74       885
+   macro avg       0.74      0.74      0.74       885
+weighted avg       0.74      0.74      0.74       885
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          334          103
+Female_true        123          325
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.73      0.76      0.75       437
+      Female       0.76      0.73      0.74       448
+
+    accuracy                           0.74       885
+   macro avg       0.75      0.74      0.74       885
+weighted avg       0.75      0.74      0.74       885
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          370           67
+Female_true         91          357
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.80      0.85      0.82       437
+      Female       0.84      0.80      0.82       448
+
+    accuracy                           0.82       885
+   macro avg       0.82      0.82      0.82       885
+weighted avg       0.82      0.82      0.82       885
+
+
+###################################################################
+Features:
+['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8_7']
+###################################################################
+SVM
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          121           12
+Female_true         46           99
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.72      0.91      0.81       133
+      Female       0.89      0.68      0.77       145
+
+    accuracy                           0.79       278
+   macro avg       0.81      0.80      0.79       278
+weighted avg       0.81      0.79      0.79       278
+
+
+TREE
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true           99           34
+Female_true         30          115
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.77      0.74      0.76       133
+      Female       0.77      0.79      0.78       145
+
+    accuracy                           0.77       278
+   macro avg       0.77      0.77      0.77       278
+weighted avg       0.77      0.77      0.77       278
+
+
+MLP
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          112           21
+Female_true         32          113
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.78      0.84      0.81       133
+      Female       0.84      0.78      0.81       145
+
+    accuracy                           0.81       278
+   macro avg       0.81      0.81      0.81       278
+weighted avg       0.81      0.81      0.81       278
+
+
+RANDOM FOREST
+
+confusion matrix:
+             Male_pred  Female_pred
+Male_true          110           23
+Female_true         28          117
+
+classification report:
+              precision    recall  f1-score   support
+
+        Male       0.80      0.83      0.81       133
+      Female       0.84      0.81      0.82       145
+
+    accuracy                           0.82       278
+   macro avg       0.82      0.82      0.82       278
+weighted avg       0.82      0.82      0.82       278
+
+
