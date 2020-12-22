@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 """
+Purpose of this file:
+Get all unique values per variable to gain a first insight into the dataset
+Save the unique values per variable into a codebook
+
+
 @author: Johannes Allgaier
 
 Johannes Allgaier, MSc

@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+Purpose of this file
+Get baseline characteristics for all users that filled out the baseline 
+questionnaire.
+Note that these are not neccessarily the users that also filled out a 
+follow-up questionnaire.
+
+
 Created on Wed Jul 22 14:30:30 2020
 
 @author: Johannes Allgaier
